@@ -1,0 +1,24 @@
+[package]
+name = "my_parser"
+version = "0.1.0"
+authors = ["illumination-k <illumination.k.27@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "my_parser"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.9.1"
+features = ["extension-module"]
+
+
+[dependencies]
+csv = "1.1"
+bio = "*"
+
+[[bin]]
+name = "read_fasta_core"
+path = "src/read_fasta.rs"
