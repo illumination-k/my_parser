@@ -32,7 +32,14 @@ ln -sfv ./target/release/libmy_parser.so my_parser.so
 
 そのうち作る
 
-read_result_csv -> umi_tools countあたりの出力を早く読める
-read_fasta -> fastaを読める(返り値は{id:seq}の辞書)
+- hello -> "Hello, World!"
+- read_result_csv -> umi_tools countあたりの出力を早く読める
+- read_fasta -> fastaを読める(返り値は{id:seq}の辞書)
+
+```python
+>>> import my_parser
+>>> my_parser.hello()
+Hello, World!
+```
 
 
